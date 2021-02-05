@@ -34,6 +34,10 @@ android {
     }
 }
 
+android.sourceSets.all {
+    java.srcDir("src/$name/kotlin")
+}
+
 dependencies {
     implementation 'com.google.android.gms:play-services-auth:18.1.0'
     implementation 'androidx.core:core:1.3.2'

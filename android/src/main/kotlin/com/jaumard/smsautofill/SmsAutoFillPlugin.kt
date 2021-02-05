@@ -23,7 +23,7 @@ import java.util.regex.Pattern
 /**
  * SmsAutoFillPlugin
  */
-class SmsAutoFillPlugin private constructor(private val channel: MethodChannel, private val registrar: Registrar) : MethodCallHandler {
+class SmsAutoFillPlugin(private val channel: MethodChannel, private val registrar: Registrar) : MethodCallHandler {
 
     val activity: Activity? = registrar.activity()
     private var pendingHintResult: MethodChannel.Result? = null
